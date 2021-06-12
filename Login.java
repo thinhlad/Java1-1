@@ -58,6 +58,7 @@ public class Login extends JFrame implements ActionListener{
 			} else if(pass.getText().equals("")) {
 				JOptionPane.showMessageDialog(Login.this, "Nhap password","ERROR!",JOptionPane.ERROR_MESSAGE);
 			} else {
+				new DanhSach();
 				this.dispose();
 			}
 		}
