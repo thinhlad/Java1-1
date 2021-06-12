@@ -55,7 +55,7 @@ public class Login extends JFrame implements ActionListener{
 			/*Neu user hoac pass chua nhap thi bao loi*/
 			if(user.getText().equals("")) {
 				JOptionPane.showMessageDialog(Login.this, "Nhap User","ERROR!",JOptionPane.ERROR_MESSAGE);
-			} else if(pass.equals("")) {
+			} else if(pass.getText().equals("")) {
 				JOptionPane.showMessageDialog(Login.this, "Nhap password","ERROR!",JOptionPane.ERROR_MESSAGE);
 			} else {
 				this.dispose();
@@ -65,9 +65,5 @@ public class Login extends JFrame implements ActionListener{
 			this.dispose();
 		}
 	}
-	
-	
-	public static void main(String[] args) {
-		new Login();
-	}
+
 }
